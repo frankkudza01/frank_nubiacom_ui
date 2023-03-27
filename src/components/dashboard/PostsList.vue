@@ -16,7 +16,7 @@
                      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence was created for the bliss of souls like mine.I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
                      <div class="profile-skills mt-5 mb-5">
                         
-                        <a href="javascript:void();;" class="btn btn-primary light btn-xs mb-1">Update</a>
+                        <a href="/posts-update" class="btn btn-primary light btn-xs mb-1">Update</a>
                         <a href="javascript:void();;" class="btn btn-danger light btn-xs mb-1">Delete</a>
                         
                      </div>

@@ -61,7 +61,7 @@
 
 <script>
     export default{
-        name:'CreatePost',
+        name:'UpdatePost',
         components:{
 
         }

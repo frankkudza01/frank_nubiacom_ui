@@ -3,6 +3,7 @@ import LoginView from '@/views/LoginView'
 import RegisterView from '@/views/RegisterView'
 import DashboardView from '@/views/DashboardView'
 import PostCreateView from '@/views/PostCreateView'
+import PostUpdateView from '@/views/PostUpdateView'
 
 const routes = [
   {
@@ -30,6 +31,12 @@ const routes = [
     path: '/posts-create',
     name: 'posts-create',
     component: PostCreateView
+  },
+
+  {
+    path: '/posts-update',
+    name: 'posts-update',
+    component: PostUpdateView
   },
 
   
