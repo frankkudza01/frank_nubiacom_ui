@@ -18,7 +18,7 @@
                                  
                               </div>
                               <div class="mt-4">
-                                 <a href="javascript:void();;" class="btn btn-primary mb-1 me-1">New Post</a> 
+                                 <a href="/posts-create" class="btn btn-primary mb-1 me-1">New Post</a> 
                                 
                               </div>
                            </div>
