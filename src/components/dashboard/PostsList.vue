@@ -17,6 +17,7 @@
                      <div class="profile-skills mt-5 mb-5">
                         
                         <a href="/posts-update" class="btn btn-primary light btn-xs mb-1">Update</a>
+                        <a href="/posts-update" class="btn btn-secondary light btn-xs mb-1">Read More</a>
                         <a href="javascript:void();;" class="btn btn-danger light btn-xs mb-1">Delete</a>
                         
                      </div>

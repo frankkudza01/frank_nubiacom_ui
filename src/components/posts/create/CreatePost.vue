@@ -2,7 +2,7 @@
     <div class="content-body">
         <div class="container">
             <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-block shadow" style="margin-bottom:4%; width:100px">Back</button>
+                <a href="/home" type="submit" class="btn btn-primary btn-block shadow" style="margin-bottom:4%; width:100px">Back</a>
             </div>
             <div class="card">
                <div class="card-body">
