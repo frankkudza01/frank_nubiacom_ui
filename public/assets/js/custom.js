@@ -140,17 +140,7 @@
 		});
 	}
 	
-	var handleDzScroll = function() {
-		jQuery('.dlab-scroll').each(function(){
-			var scroolWidgetId = jQuery(this).attr('id');
-			const ps = new PerfectScrollbar('#'+scroolWidgetId, {
-			  wheelSpeed: 2,
-			  wheelPropagation: true,
-			  minScrollbarLength: 20
-			});
-            ps.isRtl = false;
-		})
-	}
+	
 	
 	var handleMenuTabs = function() {
 		if(screenWidth <= 991 ){
@@ -206,15 +196,7 @@
 		});
 	}
 	
-	var handlePerfectScrollbar = function() {
-		if(jQuery('.dlabnav-scroll').length > 0)
-		{
-			//const qs = new PerfectScrollbar('.dlabnav-scroll');
-			const qs = new PerfectScrollbar('.dlabnav-scroll');
-			
-			qs.isRtl = false;
-		}
-	}
+	
 
 	var handleBtnNumber = function() {
 		$('.btn-number').on('click', function(e) {
@@ -347,20 +329,7 @@
         $(".chatbox .msg_card_body").css('height',ch);
     }
     
-	var domoPanel = function(){
-		const ps = new PerfectScrollbar('.dlab-demo-content');
-		$('.dlab-demo-trigger').on('click', function() {
-				$('.dlab-demo-panel').addClass('show');
-		  });
-		  $('.dlab-demo-close, .bg-close,.dlab_theme_demo').on('click', function() {
-				$('.dlab-demo-panel').removeClass('show');
-		  });
-		  
-		  $('.dlab-demo-bx').on('click', function() {
-			  $('.dlab-demo-bx').removeClass('demo-active');
-			  $(this).addClass('demo-active');
-		  });
-	} 
+	
 	
 	var handleDatetimepicker = function(){
 		if(jQuery("#datetimepicker1").length>0) {
@@ -635,10 +604,10 @@
 			handleMinHeight();
 			handleDataAction();
 			handleHeaderHight();
-			handleDzScroll();
+			
 			handleMenuTabs();
 			handleChatbox();
-			handlePerfectScrollbar();
+			
 			handleBtnNumber();
 			handleDzChatUser();
 			handleDzFullScreen();
@@ -648,7 +617,7 @@
 			handleLightgallery();
 			handleCustomFileInput();
 			vHeight();
-			domoPanel();
+			
 			handleDatetimepicker();
 			handleCkEditor();
 			headerFix();
