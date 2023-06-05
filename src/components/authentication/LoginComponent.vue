@@ -39,7 +39,7 @@
                               
                            </div>
                            <div class="text-center">
-                              <button type="submit" class="btn btn-primary btn-block shadow">Sign In</button>
+                              <a href="/home" type="submit" class="btn btn-primary btn-block shadow">Sign In</a>
                            </div>
                         </form>
                         <div class="text-center my-3">

@@ -11,7 +11,7 @@
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label class="form-label">Title</label>
-                                    <input type="text" class="form-control" placeholder="Post Title"    >
+                                    <input type="text" class="form-control" value="Making end meet"    >
                                 </div>
                             </div>
 
@@ -27,18 +27,11 @@
                         
                             </div>
 
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <label class="form-label">Theme</label>
-                                    <input type="file" class="form-control">
-                                </div>
-                        
-                            </div>
-
+                            
                             <div class="col-md-12">
                                 <div class="mb-3">
                                     <label class="form-label">Story</label>
-                                    <textarea rows="8" class="form-control" name="story" placeholder="Write Here"></textarea>
+                                    <textarea rows="8" class="form-control" name="story">Star ships were meant to fly</textarea>
                                 </div>
                         
                             </div>

@@ -45,7 +45,7 @@
 
                             <div class="col-lg-12">
                                 <div class="mb-3 mb-0">
-                                    <input type="submit" value="Save" class="submit btn btn-primary" name="submit">
+                                    <a href="/home" type="submit" class="submit btn btn-primary">Save</a>
                                 </div>
                             </div>
 
@@ -60,10 +60,12 @@
 </template>
 
 <script>
+
     export default{
         name:'CreatePost',
         components:{
 
-        }
+        },
+
     }
 </script>
