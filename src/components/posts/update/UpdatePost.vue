@@ -11,14 +11,14 @@
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label class="form-label">Title</label>
-                                    <input type="text" class="form-control" value="Making end meet"    >
+                                    <input type="text" class="form-control" v-model="title"   >
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label class="form-label">Category</label>
-                                    <select type="text" class="form-control">
+                                    <select type="text" class="form-control" v-model="category">
                                         <option>Business</option>
                                         <option>Education</option>
                                         <option>Social</option>
@@ -31,7 +31,7 @@
                             <div class="col-md-12">
                                 <div class="mb-3">
                                     <label class="form-label">Story</label>
-                                    <textarea rows="8" class="form-control" name="story">Star ships were meant to fly</textarea>
+                                    <textarea rows="8" class="form-control" v-model="description" name="story">Star ships were meant to fly</textarea>
                                 </div>
                         
                             </div>
@@ -55,8 +55,40 @@
 <script>
     export default{
         name:'UpdatePost',
-        components:{
+        data(){
+            return {
+                post:{
+                    title:"",
+                    description:"",
+                    category:"",
+                    _method:"patch"
+                }
+            }
+        },
 
+        mounted(){
+        this.showPost()
+    },
+
+    methods:{
+        async showPost(){
+            await this.axios.get(`http://127.0.0.1:8000/blog/${this.$route.params.id}`).then(response=>{
+                const { title, category, description } = response.data
+                this.post.title = title
+                this.post.description = description
+                this.post.category = category
+            }).catch(error=>{
+                console.log(error)
+            })
+        },
+        async update(){
+            await this.axios.post(`http://127.0.0.1:8000/blog/edit/${this.$route.params.id}`,this.post).then(response=>{
+                this.$router.push({name:"home"});
+                console.log(response.post);
+            }).catch(error=>{
+                console.log(error)
+            })
         }
     }
+}
 </script>

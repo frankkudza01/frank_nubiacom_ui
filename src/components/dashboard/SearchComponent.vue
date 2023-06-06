@@ -36,10 +36,24 @@
     </template>
     
     <script>
+    import axios from 'axios';
         export default{
             name:'SearchComponent.vue',
-            components:{
-    
+            props:['post'],
+            data(){
+                return {
+                    sort:'',
+                }
+            },
+            methods:{
+            
+            sortValue(){
+                axios.post('http://127.0.0.1:8000/blog/',{ sort:this.sort })
+                .then(response => (response.data.post ))
+            }
+            },
+            mounted() {
+                console.log('console filter componet')
             }
         }
     </script>
